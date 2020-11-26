@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "lib": ["es2019", "es2020.promise", "es2020.bigint", "es2020.string"],
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "strict": false,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
+    "target": "es2019",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"],
+    },
+    "outDir": "build",
+    "plugins": [
+      { "transform": "typescript-transform-paths" },
+    ]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build"]
+}

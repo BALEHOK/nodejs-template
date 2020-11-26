@@ -1,0 +1,51 @@
+{
+  "name": "my-awesome-project",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Aleksandr Shukletsov <zhmurik@yandex.ru>",
+  "license": "MIT",
+  "module": "esnext",
+  "private": true,
+  "engines": {
+    "node": ">=12.0"
+  },
+  "scripts": {
+    "start": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register ./src/index.ts",
+    "script": "ts-node --transpile-only -r tsconfig-paths/register",
+    "test": "jest",
+    "test-cov": "jest --coverage",
+    "build": "ttsc -b",
+    "clock": "node src/clock.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "cors": "^2.8.5",
+    "cron": "^1.8.2",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.0",
+    "typescript": "^4.1.2",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@types/cors": "^2.8.7",
+    "@types/express": "^4.17.7",
+    "@types/jest": "^26.0.10",
+    "@types/mongodb": "^3.5.25",
+    "@types/node": "^14.14.6",
+    "@types/uuid": "^8.3.0",
+    "core-js": "^3.7.0",
+    "jest": "^26.4.2",
+    "mongodb-memory-server": "^6.9.2",
+    "npm-run-all": "^4.1.5",
+    "random-words": "^1.1.1",
+    "ts-jest": "^26.2.0",
+    "ts-node-dev": "^1.0.0-pre.57",
+    "tsconfig-paths": "^3.9.0",
+    "ttypescript": "^1.5.12",
+    "typescript-transform-paths": "^2.0.2"
+  }
+}
